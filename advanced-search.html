@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Búsqueda avanzada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav">
+        <!-- conecta esta clase nav con este advanced y el index para realizar la busqueda en google -->
+        <a href="index.html">Google</a>
+    </div>
+
+    <div class="advanced-container">
+<!-- Título de la sección. h2 se usa para títulos secundarios Aquí indica que estamos en la página de búsqueda avanzada.-->
+        <h2>Búsqueda avanzada</h2>
+    <!-- Formulario que enviará los datos a Google.action="https://www.google.com/search"
+    significa que cuando se envíe el formulario,los datos se mandarán al buscador de Google.-->
+        <form action="https://www.google.com/search">
+<!-- Google usa estos parámetros: as_q  as_epq as_oq  as_eq  deben ser exactos para que Google funcione.-->
+<!-- Etiqueta del campo -->
+            <label>Todas estas palabras:</label>
+            <input type="text" name="as_q">
+<!-- Etiqueta del campo -->
+            <label>Esta palabra o frase exacta:</label>
+            <input type="text" name="as_epq">
+<!-- Etiqueta del campo -->
+            <label>Cualquiera de estas palabras:</label>
+            <input type="text" name="as_oq">
+<!-- Etiqueta del campo -->
+            <label>Ninguna de estas palabras:</label>
+            <input type="text" name="as_eq">
+        <!-- 
+        Botón para enviar el formulario.
+        type="submit" envía los datos a Google.
+        class="advanced-btn" sirve para darle estilo con CSS.
+        -->
+            <button type="submit" class="advanced-btn">
+                Búsqueda avanzada
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
